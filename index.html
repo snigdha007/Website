@@ -8,10 +8,10 @@
   <h1 class="name">Snigdha Sultana</h1>
   <!-- Tab links -->
 <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'About_me')">About me</button>
-    <button class="tablinks" onclick="openCity(event, 'Education')">Education</button>
-    <button class="tablinks" onclick="openCity(event, 'Profession')">Profession</button>
-    <button class="tablinks" onclick="openCity(event, 'Contact')">Contact</button>
+    <button class="tablinks" onclick="description(event, 'About_me')">About me</button>
+    <button class="tablinks" onclick="description(event, 'Education')">Education</button>
+    <button class="tablinks" onclick="description(event, 'Profession')">Profession</button>
+    <button class="tablinks" onclick="description(event, 'Contact')">Contact</button>
   </div>
   
   <!-- Tab content -->
@@ -40,8 +40,8 @@
   <div id="Contact" class="tabcontent">
     <h3>Contact</h3>
     <p>snigdha.sultana.2018@gmail.com</p>
-   
-    
+    <label for="thoughts"> Your thoughts:</label>
+    |
   </div>
   
   <link rel="stylesheet" href="styles.css">
@@ -50,7 +50,7 @@
 
 <body>
   <script>
-  function openCity(evt, cityName) {
+  function description(evt, cityName) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
