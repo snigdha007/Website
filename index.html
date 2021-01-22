@@ -2,11 +2,15 @@
 
 <html lang="en">
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <meta charset="utf-8">
 
   <title>Snigdha</title>
   <h1 class="name">Snigdha Sultana</h1>
+    
   <!-- Tab links -->
+    
 <div class="tab">
     <button class="tablinks" onclick="description(event, 'About_me')">About me</button>
     <button class="tablinks" onclick="description(event, 'Education')">Education</button>
@@ -43,7 +47,9 @@
     <label for="thoughts"> Your thoughts:</label>
     |
   </div>
-  
+  <div id="dream">
+    <img id="loading" alt="" src="all-our-dreams-can-come-true.jpg"/>
+    </div>
   <link rel="stylesheet" href="styles.css">
 
 </head>
@@ -58,6 +64,7 @@
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
+      $("#loading").hide();
   }
 
   // Get all elements with class="tablinks" and remove the class "active"
@@ -69,6 +76,7 @@
   // Show the current tab, and add an "active" class to the button that opened the tab
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
+        
 }
 </script>
   <script  type="text/javascript" src="scripts.js"></script>
