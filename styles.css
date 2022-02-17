@@ -52,3 +52,4 @@ body{ background-color: rgb(73, 33, 60) !important;}
 img#loading {
     width: 100%;
 }
+@media only screen and (max-width: 600px)  {.name{margin-left: 22%;}}
